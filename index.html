@@ -2,38 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <img src="./images/logo.svg" class="logo" alt="snap company logo">
+    <nav class="menu">
+      <button class="close-menu-button">
+        <img src="./images/icon-close-menu.svg" alt="menu close button">
+      </button>
+      <div class="left-header-section">
+        <div class="features">
+          <div clas="features-header">
+            <p>Features</p>
+            <button class="open-dropdown">
+              <img src="./images/icon-arrow-down.svg" alt="arrow-down button">
+            </button>
+            <button class="close-drowdown">
+              <img src="./images/icon-arrow-up.svg" alt="arrow up button">
+            </button>
+          </div>
+          <div class="features-dropdown">
+          </div>
+        </div>
+        <div class="company">
+          <div class="company-header">
+            <p>Company</p>
+            <button class="open-dropdown">
+              <img src="./images/icon-arrow-down.svg" alt="arrow-down button">
+            </button>
+            <button class="close-drowdown">
+              <img src="./images/icon-arrow-up.svg" alt="arrow up button">
+            </button>
+          </div>
+          <div class="company-dropdown">
+            <a>History</a>
+            <a>Our Team</a>
+            <a>Blog</a>
+          </div>
+        </div>
+        <div class="left-header-section-footer">
+          <p>
+            Careers
+          </p>
+          <p>
+            About
+          </p>
+        </div>
+      </div>
+      <div class="right-header-section">
+        <div class="login-buttons">
+          <button>Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-button">
+      <img src="./images/icon-menu.svg" alt="menu-button">
+    </button>
+  </header>
+  <main>
+    <article class="hero-img">
+      <img src="./images/image-hero-mobile.png" class="hero-mobile" alt="hero image for mobile">
+      <img src="./images/image-hero-desktop.png" class="hero-desktop" alt="hero image for desktop">
+    </article>
+    <section class="main-section">
+      <h1>
+        Make remote work
+      </h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+      </p>
+      <button>Learn more</button>
+      <div class="clients">
+        
+    </section>
+  </main>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Vincent</a>.
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
