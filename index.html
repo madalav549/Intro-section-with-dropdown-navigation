@@ -10,6 +10,9 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -20,16 +23,16 @@
       </button>
       <div class="left-header-section">
         <div class="features">
-          <div clas="features-header">
+          <div class="features-header">
             <p>Features</p>
             <button class="open-dropdown">
               <img src="./images/icon-arrow-down.svg" alt="arrow-down button">
             </button>
-            <button class="close-drowdown">
+            <button class="close-dropdown">
               <img src="./images/icon-arrow-up.svg" alt="arrow up button">
             </button>
           </div>
-          <div class="features-dropdown">
+          <div class="features-dropdown dropdown">
           </div>
         </div>
         <div class="company">
@@ -38,14 +41,14 @@
             <button class="open-dropdown">
               <img src="./images/icon-arrow-down.svg" alt="arrow-down button">
             </button>
-            <button class="close-drowdown">
+            <button class="close-dropdown">
               <img src="./images/icon-arrow-up.svg" alt="arrow up button">
             </button>
           </div>
-          <div class="company-dropdown">
-            <a>History</a>
-            <a>Our Team</a>
-            <a>Blog</a>
+          <div class="company-dropdown dropdown">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
           </div>
         </div>
         <div class="left-header-section-footer">
@@ -57,9 +60,10 @@
           </p>
         </div>
       </div>
+
       <div class="right-header-section">
-        <div class="login-buttons">
-          <button>Login</button>
+        <div class="buttons">
+          <button class="login">Login</button>
           <button class="register">Register</button>
         </div>
       </div>
@@ -69,7 +73,7 @@
     </button>
   </header>
   <main>
-    <article class="hero-img">
+    <article class="hero-img-section">
       <img src="./images/image-hero-mobile.png" class="hero-mobile" alt="hero image for mobile">
       <img src="./images/image-hero-desktop.png" class="hero-desktop" alt="hero image for desktop">
     </article>
@@ -81,8 +85,8 @@
         Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
       </p>
       <button>Learn more</button>
-      <div class="clients">
-        
+      <div class="clients"></div>
+
     </section>
   </main>
 
