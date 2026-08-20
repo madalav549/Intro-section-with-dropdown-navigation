@@ -241,6 +241,7 @@ header > img{
   color: var(--Gray-950);
   font-size: 2rem;
   font-weight: var(--font-weight-2);
+  text-align: center;
 }
 
 .main-section p{
@@ -297,7 +298,7 @@ header > img{
     gap: 2rem;
     margin-top: 1.5rem;
     width: 95%;
-    margin-bottom: 13rem;
+    margin-bottom: 7.3rem;
   }
 
   .menu{
@@ -389,4 +390,75 @@ header > img{
     padding: 0.5rem 1.7rem;
   }
 
+  /*Hero section*/
+
+  .hero-img-section{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-mobile{
+    display: none;
+  }
+
+  .hero-desktop{
+    display: block;
+  }
+
+  /*Main section*/
+
+  main{
+    width: 77%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+    align-items: center;
+    align-items: stretch;
+    margin-bottom: 5rem;
+  }
+
+  .main-section{
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    width: 50%;
+    margin-top: 4rem;
+  }
+
+  .main-section h1{
+    font-size: 3rem;
+    width: 70%;
+    text-align: left;
+  }
+
+  .main-section p{
+    text-align: left;
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  .main-section button{
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .main-section button:hover{
+    color: var(--Gray-950);
+    background-color: var(--Gray-50);
+    border: 2px solid var(--Gray-950);
+    cursor: pointer;
+  }
+
+  .clients{
+    margin-top: auto;
+    gap: 0;
+  }
+
+  .clients img{
+    width: 5rem;
+  }
 }
