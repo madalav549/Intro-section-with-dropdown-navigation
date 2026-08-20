@@ -122,3 +122,16 @@ menuButton.addEventListener("click", ()=>{
 closeButton.addEventListener("click", ()=>{
   hideMenu();
 });
+
+document.querySelectorAll('.features-header, .company-header').forEach(header => {
+  header.addEventListener('click', (e) => {
+    const dropdown = header.parentElement.querySelector('.dropdown');
+    const isOpen = dropdown.style.display === 'flex';
+    
+    dropdown.style.display = isOpen ? 'none' : 'flex';
+    const openArrow = header.querySelector('.open-dropdown');
+    const closeArrow = header.querySelector('.close-dropdown');
+    openArrow.style.display = isOpen ? 'block' : 'none';
+    closeArrow.style.display = isOpen ? 'none' : 'block';
+  });
+});

@@ -275,3 +275,118 @@ header > img{
 .clients img{
   width: 3.7rem;
 }
+
+/*Desktop design*/
+
+@media screen and (min-width: 1024px){
+
+  /*Desktop header section*/
+
+  .menu-button,
+  .close-menu-button{
+    display: none;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    width: 95%;
+    margin-bottom: 13rem;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-button,
+  .close-menu-button{
+    display: none;
+  }
+
+  .left-header-section,
+  .left-header-section-footer,
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  .features-header,
+  .company-header{
+    gap: 0.5rem;
+  }
+
+  .features-header p,
+  .company-header p,
+  .left-header-section-footer p{
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  }
+
+  .features-header p:hover,
+  .company-header p:hover,
+  .left-header-section-footer p:hover{
+    color: var(--Gray-950);
+    font-weight: var(--font-weight-2);
+    cursor: pointer;
+  }
+  
+  .features,
+  .company{
+    position: relative;
+  }
+
+  .features-dropdown,
+  .company-dropdown{
+    position: absolute;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin: 0;
+    top: 2rem;
+    width: max-content;
+    box-shadow: 0 0 0.3rem var(--Gray-950);
+  }
+
+  .features-dropdown{
+    left: -3.7rem;
+  }
+
+  .feature a,
+  .company-dropdown a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--Gray-500);
+    font-weight: var(--font-weight-1);
+  }
+
+  .buttons button{
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  }
+
+  .buttons button:hover{
+    color: var(--Gray-950);
+    font-weight: var(--font-weight-2);
+    cursor: pointer;
+  }
+
+  .register{
+    padding: 0.5rem 1.7rem;
+  }
+
+}
