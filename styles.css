@@ -409,12 +409,12 @@ header > img{
   /*Main section*/
 
   main{
-    width: 77%;
+    width: 79%;
     display: flex;
     flex-direction: row-reverse;
     padding: 0;
     margin: 0;
-    gap: 1.5rem;
+    gap: 1.7rem;
     align-items: center;
     align-items: stretch;
     margin-bottom: 5rem;
